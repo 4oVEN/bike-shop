@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">О компании</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Покупателям</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="adress">
+            г. Москва, Ферганская улица дом 10 корпус 5 офис 3
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="container">
+        <div class="header__center-inner">
+          <img class="logo" src="images/logo.svg" alt="" />
+          <input class="input" type="text" placeholder="Поиск по каталогу...." />
+          <div class="phone">
+            <a class="phone__item" href="tel:+71233457889">+7 (123) 345-78-89</a>
+            <br />
+            <a class="phone__text" href="#">Заказать звонок</a>
+          </div>
+          <a class="email" href="#">mail@mail.ru</a>
+          <ul class="user-list">
+            <li class="user-list__item">
+              <a href="" class="user-list__link basket"><img src="images/basket.svg" alt="" />
+                <p class="basket__num">2</p>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="" class="user-list__link heart"><img src="images/heart.svg" alt="" />
+                <p class="heart__num">2</p>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="" class="user-list__link compare"><img src="images/compare.svg" alt="" />
+                <p class="compare__num">2</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <ul class="menu__categories">
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link catalog">Каталог товаров</a>
+          </li>
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link bicycles">Велосипеды</a>
+          </li>
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link accessories">Аксессуары</a>
+          </li>
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link equipment">Экипировка</a>
+          </li>
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link scooters">Самокаты</a>
+          </li>
+          <li class="menu__categories-item">
+            <a href="#" class="menu__categories-link spares">Запчасти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="top">
+    <div class="container">
+      <div class="top__inner">
+        <div class="top__content">
+          <h1 class="top__title">Распродажа велосипедов
+            KROSS и Merina!</h1>
+          <p class="top__text">Самые лучшие цены только в нашем интернет-магазине!
+            Успей купить до начала сезона по самой лучшей цене!</p>
+          <a class="top__link" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+        </div>
+        <div class="top__order">
+          <form class="top__form">
+            <select class="select__form">
+              <option>Велосипеды</option>
+              <option>Аксессуары</option>
+              <option>Экипировка</option>
+              <option>Самокаты</option>
+              <option>Запчасти</option>
+            </select>
+            <div class="top__price">
+              <div class="top__price-box">
+                <div class="top__price-item">Цена</div>
+                <div class="label__box">
+                  <label class="label">от</label>
+                  <input class="input__price" type="text">
+                </div>
+                <div class="label__box">
+                  <label class="label">до</label>
+                  <input class="input__price" type="text">
+                </div>
+              </div>
+            </div>
+            <select class="select__form">
+              <option>Тип</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <select class="select__form">
+              <option>Год</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <select class="select__form">
+              <option>Марка</option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <div class="top__input">
+              <div class="top__input-box">
+                <label class="top__label">
+                  <input class="input__checkbox" type="checkbox">
+                  В наличие
+                </label>
+              </div>
+              <div class="top__input-box">
+                <label class="top__label">
+                  <input class="input__checkbox" type="checkbox">
+                  Со скидкой
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <button class="top__btn" type="submit">ПОДОБРАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="categories">
+    <div class="container">
+      <div class="categories__inner">
+        <div class="categories__tabs">
+          <a class="tab categories__tabs-item tab--active" href="#tab-1">
+            <div class="categories__tabs-info">
+              <img class="categories__tabs-img" src="./images/bicycle-tab.svg" alt="">
+              <h4 class="categories__tabs-title">Велосипеды</h4>
+            </div>
+          </a>
+          <a class="tab categories__tabs-item" href="#tab-1">
+            <div class="categories__tabs-info">
+              <img class="categories__tabs-img" src="./images/tab-water.svg" alt="">
+              <h4 class="categories__tabs-title">Аксессуары</h4>
+            </div>
+          </a>
+          <a class="tab categories__tabs-item" href="#tab-1">
+            <div class="categories__tabs-info">
+              <img class="categories__tabs-img" src="./images/tab-helmet.svg" alt="">
+              <h4 class="categories__tabs-title">Экипировка</h4>
+            </div>
+          </a>
+          <a class="tab categories__tabs-item" href="#tab-1">
+            <div class="categories__tabs-info">
+              <img class="categories__tabs-img" src="./images/tab-hand-gesture.svg" alt="">
+              <h4 class="categories__tabs-title">Самокаты</h4>
+            </div>
+          </a>
+          <a class="tab categories__tabs-item" href="#tab-1">
+            <div class="categories__tabs-info">
+              <img class="categories__tabs-img" src="./images/tab-brake.svg" alt="">
+              <h4 class="categories__tabs-title">Запчасти</h4>
+            </div>
+          </a>
+        </div>
+        <div class="categories__content">
+          <div id="tab-1" class="tabs-content categories__content-item tabs-content--active">
+            <div class="categories__content-inner">
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+              <a class="categories__content-link" href="#">
+                <img class="categories__content-img" src="./images/bicycle 1.png" alt="">
+                <p class="categories__content-text">Горные</p>
+              </a>
+            </div>
+          </div>
+          <div id="tab-1" class="tabs-content categories__content-item">content 2</div>
+          <div id="tab-1" class="tabs-content categories__content-item">content 3</div>
+          <div id="tab-1" class="tabs-content categories__content-item">content 4</div>
+          <div id="tab-1" class="tabs-content categories__content-item">content 5</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="product__inner">
+        <div class="tabs-wrapper">
+          <div class="tabs products__tabs">
+            <a class="tab products__tab tab--active" href="#tab-1">Популярные</a>
+            <a class="tab products__tab" href="#tab-2">Новинки</a>
+            <a class="tab products__tab" href="#tab-3">Распродажа</a>
+          </div>
+          <div class="tabs-container products__container">
+            <div id="tab-1" class="tabs-content products__content tabs-content--active">
+              <div class="product__card">
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="product__card-item">
+                  <a class="product-item__card" href="#">
+                    <img class="product-item__img" src="./images/bicycle-card.png" alt="">
+                    <h4 class="product-item__title">
+                      Горный велосипед LTD Rocco 950 Black-Green 29" (2020)
+                    </h4>
+                    <p class="product-item__text">Для скоростной езды по городу и легкому бездорожью.</p>
+                    <div class="product-item__color">
+                      <div class="product-item__radio">
+                        <div class="top__input ">
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__gray" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__green" type="radio" name="radio">
+                            </label>
+                          </div>
+                          <div class="top__input-box">
+                            <label class="top__label">
+                              <input class="input__checkbox radio__blue" type="radio" name="radio">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="product__list">
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="images/basket-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img class="heart-card" src="./images/heart-card.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="product__item-list">
+                          <a class="product__item-link" href="#">
+                            <img src="./images/compare-card.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product__card-footer">
+                      <a href="#" class="product__card-link">Подробнее</a>
+                      <p class="price__card">8000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tabs-content products__content">
+
+            </div>
+            <div id="tab-3" class="tabs-content products__content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brands">
+    <div class="container">
+      <div class="brands__logo">
+        <ul class="brands__items">
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-1.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-2.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-3.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-4.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-5.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-6.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-7.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-8.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brand-9.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link brands__link-plus" href="#">
+              <img class="brands__plus" src="images/plus.svg" alt="">
+              <p class="brand__text">Показать еще</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <div class="news__content">
+        <div class="tabs-wrapper">
+          <div class="tabs products__tabs news__tabs">
+            <a class="tab products__tab tab--active" href="#tab-1">Новости</a>
+            <a class="tab products__tab" href="#tab-2">Обзоры</a>
+            <a class="tab products__tab" href="#tab-3">Видео</a>
+          </div>
+          <div class="tabs-container news__container">
+            <div class="news__content-inner">
+              <img src="./images/rectangle.png" alt="">
+              <div class="news__text">
+                <p class="news__date">20.02.2021</p>
+                <h4 class="news__title">Здесь будет яркий загловок новости</h4>
+                <p class="news__main-text">Жители современных мегаполисов все большее и большее внимание уделяют
+                  здоровому образу жизни. Загрязнение окружающей среды, дороговизна дизельного и обычного топлива для
+                  многих автолюбителей, большая загруженность транспортных линий в различных городах мира – все это
+                  способствует переходу на альтернативны виды транспортных средств.И, конечно, прежде всего, это
+                  велосипеды. Первый велосипед был создан в 1645 году во Франции....<a class="news__text-link"
+                    href="#">Читать дальше</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-container news__container"></div>
+          <div class="tabs-container news__container"></div>
+        </div>
+        <div class="all-news">
+          <a class="all-news__link" href="#">ВСЕ НОВОСТИ</a>
+          <a href="#" class="all-news__inner">
+            <img class="all-news__img" src="./images/rectangle-min.png" alt="">
+            <div class="all-news__text">
+              <p class="all-news__date">20.02.2021</p>
+              <h5 class="all-news__title">Здесь будет яркий загловок новости</h5>
+            </div>
+          </a>
+          <a href="#" class="all-news__inner">
+            <img class="all-news__img" src="./images/rectangle-min.png" alt="">
+            <div class="all-news__text">
+              <p class="all-news__date">20.02.2021</p>
+              <h5 class="all-news__title">Здесь будет яркий загловок новости</h5>
+            </div>
+          </a>
+          <a href="#" class="all-news__inner">
+            <img class="all-news__img" src="./images/rectangle-min.png" alt="">
+            <div class="all-news__text">
+              <p class="all-news__date">20.02.2021</p>
+              <h5 class="all-news__title">Здесь будет яркий загловок новости</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top-inner">
+          <div class="footer__top-item">
+            <div class="footer__top-ceo">
+              <a class="footer__logo" href="">
+                <img src="./images/logo.svg" alt="">
+              </a>
+              <div class="footer__text-ceo">
+                <p class="text-ceo">СЕО текст СЕО текст </p>
+                <p class="text-ceo">СЕО текст СЕО текст </p>
+                <p class="text-ceo">СЕО текст СЕО текст </p>
+              </div>
+            </div>
+            <h6 class="footer__top-title">Подпишись на велоновости</h6>
+            <form>
+              <input class="footer__input" type="text" placeholder="Ваше имя:">
+              <input class="footer__input" type="text" placeholder="Ваш e-mail:">
+              <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Каталог</h6>
+            <ul class="footer__list">
+              <li class="footer-list__item"><a href="#">
+                  Самокаты
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Велосипеды
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Экипировка
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Аксессуары
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Запчасти
+                </a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Покупателям</h6>
+            <ul class="footer__list">
+              <li class="footer-list__item"><a href="#">
+                  О компании
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Доставка и оплата
+                </a></li>
+              <li class="footer-list__item"><a href="#">
+                  Контакты
+                </a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Мы принимаем:</h6>
+            <ul class="footer__box">
+              <li class="footer__box-item"><img src="./images/webmoney.png" alt=""></li>
+              <li class="footer__box-item"><img src="./images/mastercard.png" alt=""></li>
+              <li class="footer__box-item"><img src="./images/iomoney.png" alt=""></li>
+              <li class="footer__box-item"><img src="./images/visa.png" alt=""></li>
+              <li class="footer__box-item"><img src="./images/sberbank.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Контакты</h6>
+            <ul class="footer__list">
+              <li class="footer-list__contact">
+                <p class="adress">
+                  г. Москва, ул. Ферганская, 10 корпус 5 офис 3
+                </p>
+              </li>
+              <li class="footer-list__contact">
+                <a class="email" href="#">mail@mail.ru</a>
+              </li>
+              <li class="footer-list__contact">
+                <div class="phone">
+                  <a class="phone__item" href="tel:+71233457889">+7 (123) 345-78-89</a>
+                  <br />
+                  <a class="phone__text" href="#">Заказать звонок</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="tabs-wrapper">
+  <div class="tabs">
+    <a class="tab tab--active" href="#"></a>
+  </div>
+  <div class="tabs-container">
+    <div class="tabs-content"></div>
+  </div>
+</div> -->
