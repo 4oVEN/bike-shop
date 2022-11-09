@@ -13,3 +13,14 @@ $(function(){
 });
 
 });
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu__list');
+
+      function toggleMenu() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+      }
+      hamburger.addEventListener('click', toggleMenu);
+      menu.addEventListener('click', toggleMenu);
+      
