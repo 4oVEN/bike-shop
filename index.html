@@ -80,17 +80,17 @@
           <a class="email" href="#">mail@mail.ru</a>
           <ul class="user-list">
             <li class="user-list__item">
-              <a href="#" class="user-list__link basket"><img src="images/basket.svg" alt="" />
+              <a href="#" class="user-list__link basket"><img src="images/basket.svg" alt="basket" />
                 <p class="basket__num">2</p>
               </a>
             </li>
             <li class="user-list__item">
-              <a href="#" class="user-list__link heart"><img src="images/heart.svg" alt="" />
+              <a href="#" class="user-list__link heart"><img src="images/heart.svg" alt="heart" />
                 <p class="heart__num">2</p>
               </a>
             </li>
             <li class="user-list__item">
-              <a href="#" class="user-list__link compare"><img src="images/compare.svg" alt="" />
+              <a href="#" class="user-list__link compare"><img src="images/compare.svg" alt="compare" />
                 <p class="compare__num">2</p>
               </a>
             </li>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="header__bottom">
+   <div class="header__bottom">
       <div class="container">
         <ul class="menu__categories">
           <li class="menu__categories-item">
@@ -121,9 +121,9 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div> 
   </header>
-  <!-- <section class="top">
+   <section class="top">
     <div class="container">
       <div class="top__inner">
         <div class="top__content">
@@ -132,6 +132,7 @@
           <p class="top__text">Самые лучшие цены только в нашем интернет-магазине!
             Успей купить до начала сезона по самой лучшей цене!</p>
           <a class="top__link" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+          <button class="top__btn options">ПОДОБРАТЬ ПО ПАРАМЕТРАМ</button>
         </div>
         <div class="top__order">
           <form class="top__form">
@@ -157,17 +158,17 @@
             </div>
             <select class="select__form">
               <option>Тип</option>
-              <option></option>
+              <option>Горный</option>
               <option></option>
               <option></option>
               <option></option>
             </select>
             <select class="select__form">
               <option>Год</option>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
             </select>
             <select class="select__form">
               <option>Марка</option>
@@ -197,8 +198,74 @@
         </div>
       </div>
     </div>
+    <div class="modal">
+      <div class="top__order">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">Подбор по параметрам</div>
+      <form class="top__form">
+        <select class="select__form">
+          <option>Велосипеды</option>
+          <option>Аксессуары</option>
+          <option>Экипировка</option>
+          <option>Самокаты</option>
+          <option>Запчасти</option>
+        </select>
+        <div class="top__price">
+          <div class="top__price-box">
+            <div class="top__price-item">Цена</div>
+            <div class="label__box">
+              <label class="label">от</label>
+              <input class="input__price" type="text">
+            </div>
+            <div class="label__box">
+              <label class="label">до</label>
+              <input class="input__price" type="text">
+            </div>
+          </div>
+        </div>
+        <select class="select__form">
+          <option>Тип</option>
+          <option>Горный</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        <select class="select__form">
+          <option>Год</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+        </select>
+        <select class="select__form">
+          <option>Марка</option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        <div class="top__input">
+          <div class="top__input-box">
+            <label class="top__label">
+              <input class="input__checkbox" type="checkbox">
+              В наличие
+            </label>
+          </div>
+          <div class="top__input-box">
+            <label class="top__label">
+              <input class="input__checkbox" type="checkbox">
+              Со скидкой
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <button class="top__btn" type="submit">ПОДОБРАТЬ</button>
+        </div>
+      </form>
+    </div>
+    </div>
   </section>
-  <section class="categories">
+  <!--<section class="categories">
     <div class="container">
       <div class="categories__inner">
         <div class="categories__tabs">
@@ -844,6 +911,9 @@
     </div>
   </footer> -->
 
+
+
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/main.js"></script>
@@ -851,11 +921,3 @@
 
 </html>
 
-<!-- <div class="tabs-wrapper">
-  <div class="tabs">
-    <a class="tab tab--active" href="#"></a>
-  </div>
-  <div class="tabs-container">
-    <div class="tabs-content"></div>
-  </div>
-</div> -->
