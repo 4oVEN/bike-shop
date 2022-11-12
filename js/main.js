@@ -24,3 +24,9 @@ const hamburger = document.querySelector('.hamburger'),
       hamburger.addEventListener('click', toggleMenu);
       menu.addEventListener('click', toggleMenu);
       
+
+      //modal
+
+      $('[data-modal=modal]').on('click', function(){
+        $('.modal', '.top__order').fadeIn();
+      });
