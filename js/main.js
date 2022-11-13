@@ -12,6 +12,7 @@ $(function(){
     $($(this).attr('href')).addClass('tabs-content--active');
 });
 
+ 
 });
 
 const hamburger = document.querySelector('.hamburger'),
@@ -27,6 +28,12 @@ const hamburger = document.querySelector('.hamburger'),
 
       //modal
 
+
       $('[data-modal=modal]').on('click', function(){
-        $('.modal', '.top__order').fadeIn();
+        $('.modal, #modal').fadeIn();
       });
+      $('.modal__close').on('click', function(){
+        $('.modal, #modal').fadeOut();
+      });
+
+      

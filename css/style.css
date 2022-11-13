@@ -892,9 +892,10 @@ body {
 }
 .modal__close{
   position: absolute;
-  top: 80px;
-  right: 0;
-  font-size: 21px;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  color: #00A1D3;
 }
 
 .modal__title{
@@ -983,8 +984,10 @@ body {
   }
   .modal .top__order{
     display: none;
+    width: 330px;
     margin: 0 auto;
     padding-top: 87px;
+    padding: 100px 20px 30px 10px;
 }
 
  }
