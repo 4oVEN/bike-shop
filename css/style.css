@@ -592,7 +592,6 @@ body {
   height: 405px;
   position: relative;
   padding: 30px 24px;
-  margin-bottom: 30px;
 }
 .product__card-item:hover{
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -628,8 +627,9 @@ body {
 }
 .product__card{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 25px;
 }
 .product__card-footer{
   display: flex;
@@ -1063,7 +1063,7 @@ body {
   }
   .product__card-item{
     position: relative;
-    width: 173px;
+    width: 172px;
     height: 351px;
     padding: 15px;
   }
@@ -1087,6 +1087,9 @@ body {
   .price__card {
     position: absolute;
     bottom: 15px;
+  }
+  .product__card{
+    gap: 10px;
   }
  }
  @media (max-width: 576px){
