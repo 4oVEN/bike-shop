@@ -653,8 +653,9 @@ body {
 }
 .brands__items{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1px;
 }
 .brands__link{
   width: 227px;
@@ -686,7 +687,13 @@ body {
   padding: 39px 61px;
 }
 .brands__plus{
-  margin: 0 31px 11px;
+  margin: 0 auto 11px;
+  display: block;
+}
+.brand__text{
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
 }
 .news__content-inner{
   display: flex;
@@ -1096,6 +1103,9 @@ body {
   .email{
     display: none;
   }
+  .products {
+    margin-bottom: 60px;
+  }
   .products__tab{
     margin-right: 10px;
     font-size: 12px;
@@ -1103,6 +1113,22 @@ body {
     height: 45px;
     padding-top: 10px;
   }
+  .brands{
+    margin-bottom: 60px;
+  }
+  .brands__link{
+    width: 176px;
+    height: 112px;
+  }
+  .brands__img{
+    width: 100%;
+  }
+  .brands__link-plus {
+    padding: 30px 0px;
+}
+.brands__plus{
+  width: 29px;
+}
 
  }
  @media (max-width: 450px){
