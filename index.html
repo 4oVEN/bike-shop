@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="header__bottom">
+   <div class="header__bottom">
       <div class="container">
         <ul class="menu__categories">
           <li class="menu__categories-item">
@@ -121,9 +121,9 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div> 
   </header>
-  <!-- <section class="top">
+   <section class="top">
     <div class="container">
       <div class="top__inner">
         <div class="top__content">
@@ -132,6 +132,7 @@
           <p class="top__text">Самые лучшие цены только в нашем интернет-магазине!
             Успей купить до начала сезона по самой лучшей цене!</p>
           <a class="top__link" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+          <button data-modal='modal' class="top__btn options">ПОДОБРАТЬ ПО ПАРАМЕТРАМ</button>
         </div>
         <div class="top__order">
           <form class="top__form">
@@ -157,22 +158,22 @@
             </div>
             <select class="select__form">
               <option>Тип</option>
-              <option></option>
+              <option>Горный</option>
               <option></option>
               <option></option>
               <option></option>
             </select>
             <select class="select__form">
               <option>Год</option>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
             </select>
             <select class="select__form">
               <option>Марка</option>
-              <option></option>
-              <option></option>
+              <option>KROSS</option>
+              <option>Merina</option>
               <option></option>
               <option></option>
             </select>
@@ -197,6 +198,72 @@
         </div>
       </div>
     </div>
+    <div class="modal">
+      <div id="modal" class="top__order">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">Подбор по параметрам</div>
+      <form class="top__form">
+        <select class="select__form">
+          <option>Велосипеды</option>
+          <option>Аксессуары</option>
+          <option>Экипировка</option>
+          <option>Самокаты</option>
+          <option>Запчасти</option>
+        </select>
+        <div class="top__price">
+          <div class="top__price-box">
+            <div class="top__price-item">Цена</div>
+            <div class="label__box">
+              <label class="label">от</label>
+              <input class="input__price" type="text">
+            </div>
+            <div class="label__box">
+              <label class="label">до</label>
+              <input class="input__price" type="text">
+            </div>
+          </div>
+        </div>
+        <select class="select__form">
+          <option>Тип</option>
+          <option>Горный</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        <select class="select__form">
+          <option>Год</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+        </select>
+        <select class="select__form">
+          <option>Марка</option>
+          <option>KROSS</option>
+          <option>Merina</option>
+          <option></option>
+          <option></option>
+        </select>
+        <div class="top__input">
+          <div class="top__input-box">
+            <label class="top__label">
+              <input class="input__checkbox" type="checkbox">
+              В наличие
+            </label>
+          </div>
+          <div class="top__input-box">
+            <label class="top__label">
+              <input class="input__checkbox" type="checkbox">
+              Со скидкой
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <button class="top__btn" type="submit">ПОДОБРАТЬ</button>
+        </div>
+      </form>
+    </div>
+    </div>
   </section>
   <section class="categories">
     <div class="container">
@@ -204,31 +271,41 @@
         <div class="categories__tabs">
           <a class="tab categories__tabs-item tab--active" href="#tab-1">
             <div class="categories__tabs-info">
-              <img class="categories__tabs-img" src="./images/bicycle-tab.svg" alt="">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#bicycle-tab"></use>
+              </svg>
               <h4 class="categories__tabs-title">Велосипеды</h4>
             </div>
           </a>
           <a class="tab categories__tabs-item" href="#tab-1">
             <div class="categories__tabs-info">
-              <img class="categories__tabs-img" src="./images/tab-water.svg" alt="">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#tab-water"></use>
+              </svg>
               <h4 class="categories__tabs-title">Аксессуары</h4>
             </div>
           </a>
           <a class="tab categories__tabs-item" href="#tab-1">
             <div class="categories__tabs-info">
-              <img class="categories__tabs-img" src="./images/tab-helmet.svg" alt="">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#tab-helmet"></use>
+              </svg>
               <h4 class="categories__tabs-title">Экипировка</h4>
             </div>
           </a>
           <a class="tab categories__tabs-item" href="#tab-1">
             <div class="categories__tabs-info">
-              <img class="categories__tabs-img" src="./images/tab-hand-gesture.svg" alt="">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#tab-hand-gesture"></use>
+              </svg>
               <h4 class="categories__tabs-title">Самокаты</h4>
             </div>
           </a>
           <a class="tab categories__tabs-item" href="#tab-1">
             <div class="categories__tabs-info">
-              <img class="categories__tabs-img" src="./images/tab-brake.svg" alt="">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#tab-brake"></use>
+              </svg>
               <h4 class="categories__tabs-title">Запчасти</h4>
             </div>
           </a>
@@ -334,7 +411,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -385,7 +462,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -436,7 +513,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -487,7 +564,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -538,7 +615,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -589,7 +666,7 @@
                         </div>
                       </div>
                       <ul class="product__list">
-                        <li class="product__item-list">
+                        <li class="product__item-list order">
                           <a class="product__item-link" href="#">
                             <img src="images/basket-card.svg" alt="">
                           </a>
@@ -682,7 +759,7 @@
       </div>
     </div>
   </section>
-  <section class="news">
+  <!--<section class="news">
     <div class="container">
       <div class="news__content">
         <div class="tabs-wrapper">
@@ -844,6 +921,9 @@
     </div>
   </footer> -->
 
+
+
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/main.js"></script>
@@ -851,11 +931,3 @@
 
 </html>
 
-<!-- <div class="tabs-wrapper">
-  <div class="tabs">
-    <a class="tab tab--active" href="#"></a>
-  </div>
-  <div class="tabs-container">
-    <div class="tabs-content"></div>
-  </div>
-</div> -->
