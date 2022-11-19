@@ -697,7 +697,7 @@ body {
 }
 .news__content-inner{
   display: flex;
-  width: 750px;
+  max-width: 750px;
   height: 298px;
 }
 .news__text{
@@ -728,8 +728,15 @@ body {
 }
 .news__content{
   display: flex;
+  
+}
+.all-news{
+  position: relative;
 }
 .all-news__link{
+  position: absolute;
+  right: 0;
+  top: -106px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -737,8 +744,9 @@ body {
   background: #00A1D3;
   border-radius: 100px;
   padding: 22px 43px;
-  margin-bottom: 40px;
-  margin-left: 193px;
+}
+.all-news{
+  margin-top: 106px;
 }
 .all-news__inner{
   width: 343px;
