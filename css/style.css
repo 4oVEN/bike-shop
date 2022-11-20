@@ -130,7 +130,6 @@ body {
   color: #000000;
   position: relative;
   padding-left: 35px;
-  margin: 0 15px;
 }
 .email::before{
   content: '';
@@ -749,7 +748,7 @@ body {
   margin-top: 106px;
 }
 .all-news__inner{
-  width: 343px;
+  max-width: 343px;
   display: flex;
   margin-left: 28px;
   padding-bottom: 10px;
@@ -937,6 +936,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 1100px){
+  .footer__bottom-inner{
+    width: 440px;
+  }
+}
 
 
  @media (max-width: 1024px){
@@ -946,11 +950,42 @@ body {
   .input__large{
     width: 320px;
   }
+  .news__content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .all-news{
+    margin-top: 35px;
+  }
+  .all-news__link{
+    right: 20%;
+    top: 325px;
+  }
+  .all-news__inner{
+    margin-left: 0;
+  }
+  .brands {
+    margin-bottom: 60px;
+  }
+  .footer__top-item:nth-child(2), .footer__top-item:nth-child(3){
+    display: none;
+  }
+  .footer__bottom{
+    bottom: 42px;
+  }
+  .footer__bottom-inner{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__bottom-link{
+    margin-top: 10px;
+  }
+  
  }
 
  @media (max-width: 900px){
   .adress, .logo, .phone, .menu__categories-item:not(:first-child), .top__order, 
-  .categories__content  {
+  .categories__content {
     display: none;
   }
   .menu__list{
@@ -964,7 +999,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 161, 211, .6);
+    background-color: rgba(0, 161, 211, .9);
     transform: translateX(100%);
     transition: all 0.6s;
     z-index: 100;
@@ -997,8 +1032,11 @@ body {
   .logo-mobile-img{
     width: 100%;
   }
-  .call, .hamburger, .options{
+  .call, .hamburger, .options, .footer-adress{
     display: flex;
+  }
+  .footer-phone{
+    display: block;
   }
   .top__inner{
     justify-content: center;
@@ -1106,6 +1144,39 @@ body {
   .product__card{
     gap: 10px;
   }
+  .news__content-inner {
+    display: none;
+  }
+  .all-news__inner{
+    max-width: 343px;
+  }
+  .all-news{
+    margin-top: 0px;
+  }
+  .footer{
+    padding-bottom: 100px;
+  }
+  .footer__bottom{
+    bottom: 30px;
+  }
+  .footer__social{
+    margin-top: 0px;
+  }
+  .footer__top-inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__top-title{
+    text-align: center;
+  }
+  .footer__top-item:first-child{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__box, .footer__bottom-inner{
+    width: 100%;
+  }
+
  }
  @media (max-width: 576px){
   .email{
